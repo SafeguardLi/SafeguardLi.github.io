@@ -1,0 +1,22 @@
+---
+title: 'Peer-graded Assignment:  R Markdown Presentation & Plotly'
+author: "Wangzhi Ll"
+date: "2019/7/8"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(plotly)
+library(grid)
+```
+
+## Surface Plot
+
+```{r surface}
+plot_ly(z = matrix(sort(rnorm(100*100)), nrow = 100, ncol = 100), type = "surface")
+
+```
+
+
+## Thank you for reviewing!
