@@ -1,0 +1,21 @@
+"title"	"tomatometer"	"audience_score"
+"1"	"Abominable"	80	96
+"2"	"Downton Abbey"	84	95
+"3"	"Hustlers"	88	66
+"4"	"It Chapter Two"	63	78
+"5"	"Ad Astra"	83	41
+"6"	"Rambo: Last Blood"	27	83
+"7"	"Judy"	84	89
+"8"	"Good Boys"	80	86
+"9"	"The Lion King"	53	88
+"10"	"Angel Has Fallen"	39	93
+"11"	"Fast & Furious Presents: Hobbs & Shaw"	67	88
+"12"	"Overcomer"	50	98
+"13"	"The Peanut Butter Falcon"	95	96
+"14"	"Scary Stories to Tell in the Dark"	79	72
+"15"	"Dora and the Lost City of Gold"	84	88
+"16"	"Brittany Runs a Marathon"	89	88
+"17"	"Nothing to Lose 2 (Nada a perder 2)"	NA	NA
+"18"	"Once Upon a Time In Hollywood"	85	70
+"19"	"Linda Ronstadt: The Sound of My Voice"	88	99
+"20"	"The Angry Birds Movie 2"	73	84
