@@ -1,0 +1,14 @@
+--- 
+title: "A Brief Intro to Bookdown"
+author: "Wangzhi Li"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+github-repo: SafeguardLi/SafeguardLi.github.io
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Preface {-}
+
+This is Preface

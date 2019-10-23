@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571852816624.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "745E33A3",
+    "lastKnownWriteTime" : 1571854214,
+    "last_content_update" : 1571854214757,
+    "path" : "~/Documents/GitHub/SafeguardLi.github.io/index.rmd",
+    "project_path" : "index.rmd",
+    "properties" : {
+        "cursorPosition" : "13,15",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
