@@ -21,7 +21,7 @@
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
 
-<meta name="author" content="Wangzhi Li" />
+<meta name="author" content="Weixi Yao and Wangzhi Li" />
 
 
 <meta name="date" content="2019-10-23" />
@@ -147,6 +147,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.1" data-path="basic.html"><a href="basic.html#r-code"><i class="fa fa-check"></i><b>2.1</b> R code</a></li>
 <li class="chapter" data-level="2.2" data-path="basic.html"><a href="basic.html#figures"><i class="fa fa-check"></i><b>2.2</b> Figures</a></li>
 <li class="chapter" data-level="2.3" data-path="basic.html"><a href="basic.html#tables"><i class="fa fa-check"></i><b>2.3</b> Tables</a></li>
+<li class="chapter" data-level="2.4" data-path="basic.html"><a href="basic.html#reference"><i class="fa fa-check"></i><b>2.4</b> Reference</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="advanced.html"><a href="advanced.html"><i class="fa fa-check"></i><b>3</b> Advanced Bookdown</a><ul>
 <li class="chapter" data-level="3.1" data-path="advanced.html"><a href="advanced.html#surface-plot-plotly"><i class="fa fa-check"></i><b>3.1</b> Surface Plot-plotly</a></li>
@@ -176,13 +177,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">2</span> Basic Bookdown</h1>
 <div id="r-code" class="section level2">
 <h2><span class="header-section-number">2.1</span> R code</h2>
-<p>This is a sample r code. Just like <em>.rmd</em> file, Some code ould be embeded in line<code>rnorm(10)</code> and results is 0.7255467, 0.9635054, -0.7512086, -0.697568, 1.3546897, 0.2033075, 2.2724609, 1.5187621, -0.1585771, 0.5423169.</p>
+<p>This is a sample r code. Just like <em>.rmd</em> file, Some code ould be embeded in line<code>rnorm(10)</code> and results is -1.160251, 0.1539437, 1.4734804, 0.1667412, 0.6325754, -0.7980314, 0.0273887, 0.0716273, 0.1779327, -0.9555549.</p>
 <p>Or you can put them in a code chunk:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
 <pre><code>## [1] 2</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">rnorm</span>(<span class="dv">10</span>)  <span class="co"># 10 random numbers</span></a></code></pre></div>
-<pre><code>##  [1] -0.16398300 -0.27158736 -0.04335216  0.15622989  0.85347279
-##  [6] -0.65927631 -0.77871977  1.14687526  0.67212827  1.23827786</code></pre>
+<pre><code>##  [1] -0.70730933  1.16073188 -1.73499313  0.94633531 -1.70076635
+##  [6] -0.33435175  1.45740339 -1.58812803 -1.78261064  0.09712482</code></pre>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">plot</span>(dist <span class="op">~</span><span class="st"> </span>speed, cars)  <span class="co"># a scatterplot</span></a></code></pre></div>
 <div class="figure"><span id="fig:chunk-label"></span>
 <img src="_main_files/figure-html/chunk-label-1.png" alt="A figure caption." width="672" />
@@ -202,7 +203,6 @@ Figure 2.1: A figure caption.
 Figure 2.2: Here is a nice figure!
 </p>
 </div>
-<p>Reference a figure by its code chunk label with the <code>fig:</code> prefix, e.g., see Figure <a href="basic.html#fig:nice-fig">2.2</a>. Similarly, you can reference tables generated from <code>knitr::kable()</code>, e.g., see Table <a href="basic.html#tab:nice-tab">2.1</a>.</p>
 </div>
 <div id="tables" class="section level2">
 <h2><span class="header-section-number">2.3</span> Tables</h2>
@@ -364,6 +364,10 @@ Figure 2.2: Here is a nice figure!
 </tr>
 </tbody>
 </table>
+</div>
+<div id="reference" class="section level2">
+<h2><span class="header-section-number">2.4</span> Reference</h2>
+<p>Reference a figure by its code chunk label with the <code>fig:</code> prefix, e.g., see Figure <a href="basic.html#fig:nice-fig">2.2</a>. Similarly, you can reference tables generated from <code>knitr::kable()</code>, e.g., see Table <a href="basic.html#tab:nice-tab">2.1</a>. You can also refer to chapters in your books @ref({#intro}) by <code>\@ref({#intro})</code>.</p>
 
 </div>
 </div>
