@@ -143,12 +143,18 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="basic.html"><a href="basic.html"><i class="fa fa-check"></i><b>2</b> Basic Bookdown</a></li>
+<li class="chapter" data-level="2" data-path="basic.html"><a href="basic.html"><i class="fa fa-check"></i><b>2</b> Basic Bookdown</a><ul>
+<li class="chapter" data-level="2.1" data-path="basic.html"><a href="basic.html#r-code"><i class="fa fa-check"></i><b>2.1</b> R code</a></li>
+<li class="chapter" data-level="2.2" data-path="basic.html"><a href="basic.html#figures"><i class="fa fa-check"></i><b>2.2</b> Figures</a></li>
+<li class="chapter" data-level="2.3" data-path="basic.html"><a href="basic.html#tables"><i class="fa fa-check"></i><b>2.3</b> Tables</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="advanced.html"><a href="advanced.html"><i class="fa fa-check"></i><b>3</b> Advanced Bookdown</a><ul>
 <li class="chapter" data-level="3.1" data-path="advanced.html"><a href="advanced.html#surface-plot-plotly"><i class="fa fa-check"></i><b>3.1</b> Surface Plot-plotly</a></li>
 <li class="chapter" data-level="3.2" data-path="advanced.html"><a href="advanced.html#map-with-date-leaflet"><i class="fa fa-check"></i><b>3.2</b> Map with Date-leaflet</a></li>
+<li class="chapter" data-level="3.3" data-path="advanced.html"><a href="advanced.html#citation"><i class="fa fa-check"></i><b>3.3</b> Citation</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="final.html"><a href="final.html"><i class="fa fa-check"></i><b>4</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 </ul>
 
       </nav>
@@ -168,20 +174,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="basic" class="section level1">
 <h1><span class="header-section-number">2</span> Basic Bookdown</h1>
+<div id="r-code" class="section level2">
+<h2><span class="header-section-number">2.1</span> R code</h2>
+<p>This is a sample r code. Just like <em>.rmd</em> file, Some code ould be embeded in line<code>rnorm(10)</code> and results is 0.7255467, 0.9635054, -0.7512086, -0.697568, 1.3546897, 0.2033075, 2.2724609, 1.5187621, -0.1585771, 0.5423169.</p>
+<p>Or you can put them in a code chunk:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
+<pre><code>## [1] 2</code></pre>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">rnorm</span>(<span class="dv">10</span>)  <span class="co"># 10 random numbers</span></a></code></pre></div>
+<pre><code>##  [1] -0.16398300 -0.27158736 -0.04335216  0.15622989  0.85347279
+##  [6] -0.65927631 -0.77871977  1.14687526  0.67212827  1.23827786</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">plot</span>(dist <span class="op">~</span><span class="st"> </span>speed, cars)  <span class="co"># a scatterplot</span></a></code></pre></div>
+<div class="figure"><span id="fig:chunk-label"></span>
+<img src="_main_files/figure-html/chunk-label-1.png" alt="A figure caption." width="672" />
+<p class="caption">
+Figure 2.1: A figure caption.
+</p>
+</div>
+</div>
+<div id="figures" class="section level2">
+<h2><span class="header-section-number">2.2</span> Figures</h2>
 <p>Figures and tables with captions will be placed in <code>figure</code> and <code>table</code> environments, respectively.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="fl">.1</span>, <span class="fl">.1</span>))</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">plot</span>(pressure, <span class="dt">type =</span> <span class="st">&#39;b&#39;</span>, <span class="dt">pch =</span> <span class="dv">19</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="fl">.1</span>, <span class="fl">.1</span>))</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw">plot</span>(pressure, <span class="dt">type =</span> <span class="st">&#39;b&#39;</span>, <span class="dt">pch =</span> <span class="dv">19</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:nice-fig"></span>
 <img src="_main_files/figure-html/nice-fig-1.png" alt="Here is a nice figure!" width="80%" />
 <p class="caption">
-Figure 2.1: Here is a nice figure!
+Figure 2.2: Here is a nice figure!
 </p>
 </div>
-<p>Reference a figure by its code chunk label with the <code>fig:</code> prefix, e.g., see Figure <a href="basic.html#fig:nice-fig">2.1</a>. Similarly, you can reference tables generated from <code>knitr::kable()</code>, e.g., see Table <a href="basic.html#tab:nice-tab">2.1</a>.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">  <span class="kw">head</span>(iris, <span class="dv">20</span>), <span class="dt">caption =</span> <span class="st">&#39;Here is a nice table!&#39;</span>,</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3">  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4">)</a></code></pre></div>
+<p>Reference a figure by its code chunk label with the <code>fig:</code> prefix, e.g., see Figure <a href="basic.html#fig:nice-fig">2.2</a>. Similarly, you can reference tables generated from <code>knitr::kable()</code>, e.g., see Table <a href="basic.html#tab:nice-tab">2.1</a>.</p>
+</div>
+<div id="tables" class="section level2">
+<h2><span class="header-section-number">2.3</span> Tables</h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(</a>
+<a class="sourceLine" id="cb7-2" data-line-number="2">  <span class="kw">head</span>(iris, <span class="dv">20</span>), <span class="dt">caption =</span> <span class="st">&#39;Here is a nice table!&#39;</span>,</a>
+<a class="sourceLine" id="cb7-3" data-line-number="3">  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></a>
+<a class="sourceLine" id="cb7-4" data-line-number="4">)</a></code></pre></div>
 <table>
 <caption><span id="tab:nice-tab">Table 2.1: </span>Here is a nice table!</caption>
 <thead>
@@ -337,6 +365,7 @@ Figure 2.1: Here is a nice figure!
 </tbody>
 </table>
 
+</div>
 </div>
             </section>
 

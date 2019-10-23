@@ -2,8 +2,11 @@
 
 ## R code
 
-This is a sample r code.
-```{r chunk-label, echo = FALSE, fig.cap = 'A figure caption.'}
+This is a sample r code. Just like *.rmd* file, Some code ould be embeded in line`rnorm(10)` and results is `r rnorm(10)`.
+
+Or you can put them in a code chunk:
+
+```{r chunk-label, fig.cap = 'A figure caption.'}
 1 + 1
 rnorm(10)  # 10 random numbers
 plot(dist ~ speed, cars)  # a scatterplot
@@ -26,3 +29,4 @@ knitr::kable(
   booktabs = TRUE
 )
 ```
+
