@@ -12,9 +12,23 @@ rnorm(10)  # 10 random numbers
 plot(dist ~ speed, cars)  # a scatterplot
 ```
 
-## Figures
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+## Equations
 
+You can even write latex into this .rmd file so to utilize the super power of latex to create complicated mathematical equations.
+
+```latex
+$$\begin{equation*} 
+\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x)
+\end{equation*} $$
+```
+
+$$\begin{equation*} 
+\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x)
+\end{equation*} $$
+
+## Figures
+
+Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
 ```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
 par(mar = c(4, 4, .1, .1))
 plot(pressure, type = 'b', pch = 19)
@@ -29,7 +43,21 @@ knitr::kable(
 )
 ```
 
-## Cross-reference 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab). 
 
+## Interactive plot
+```{r map, echo = FALSE}
+library(grid)
+library(leaflet)
+Icon <- makeIcon(
+        iconUrl = "https://www.columbia.edu/content/sites/default/files/styles/cu_crop/public/content/about/icon-crown.png?itok=VgCocz0Q",
+        iconWidth = 31*215/230, iconHeight = 31,
+        iconAnchorX = 31*215/230/2, iconAnchorY = 16
+)
+popup <- c("<a href='https://www.columbia.edu/'> Columbia University </a>")
+location <- data.frame(
+        lat = c(40.806290),
+        lng = c(-73.963005)
+)
 
+location%>%leaflet()%>%addTiles()%>%addMarkers(icon = Icon, popup = popup)
+```

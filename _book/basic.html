@@ -13,7 +13,7 @@
   
   
   <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="github-repo" content="SafeguardLi/SafeguardLi.github.io" />
+  
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="2 Basic Bookdown | A Brief Intro to Bookdown" />
@@ -51,12 +51,6 @@
 
 
 <script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.9.0/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.46.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.46.1/plotly-latest.min.js"></script>
 <link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
@@ -145,14 +139,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="basic.html"><a href="basic.html"><i class="fa fa-check"></i><b>2</b> Basic Bookdown</a><ul>
 <li class="chapter" data-level="2.1" data-path="basic.html"><a href="basic.html#r-code"><i class="fa fa-check"></i><b>2.1</b> R code</a></li>
-<li class="chapter" data-level="2.2" data-path="basic.html"><a href="basic.html#figures"><i class="fa fa-check"></i><b>2.2</b> Figures</a></li>
-<li class="chapter" data-level="2.3" data-path="basic.html"><a href="basic.html#tables"><i class="fa fa-check"></i><b>2.3</b> Tables</a></li>
-<li class="chapter" data-level="2.4" data-path="basic.html"><a href="basic.html#reference"><i class="fa fa-check"></i><b>2.4</b> Reference</a></li>
+<li class="chapter" data-level="2.2" data-path="basic.html"><a href="basic.html#equations"><i class="fa fa-check"></i><b>2.2</b> Equations</a></li>
+<li class="chapter" data-level="2.3" data-path="basic.html"><a href="basic.html#figures"><i class="fa fa-check"></i><b>2.3</b> Figures</a></li>
+<li class="chapter" data-level="2.4" data-path="basic.html"><a href="basic.html#tables"><i class="fa fa-check"></i><b>2.4</b> Tables</a></li>
+<li class="chapter" data-level="2.5" data-path="basic.html"><a href="basic.html#interactive-plot"><i class="fa fa-check"></i><b>2.5</b> Interactive plot</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="advanced.html"><a href="advanced.html"><i class="fa fa-check"></i><b>3</b> Advanced Bookdown</a><ul>
-<li class="chapter" data-level="3.1" data-path="advanced.html"><a href="advanced.html#surface-plot-plotly"><i class="fa fa-check"></i><b>3.1</b> Surface Plot-plotly</a></li>
-<li class="chapter" data-level="3.2" data-path="advanced.html"><a href="advanced.html#map-with-date-leaflet"><i class="fa fa-check"></i><b>3.2</b> Map with Date-leaflet</a></li>
-<li class="chapter" data-level="3.3" data-path="advanced.html"><a href="advanced.html#citation"><i class="fa fa-check"></i><b>3.3</b> Citation</a></li>
+<li class="chapter" data-level="3.1" data-path="advanced.html"><a href="advanced.html#cross-reference"><i class="fa fa-check"></i><b>3.1</b> Cross-reference</a></li>
+<li class="chapter" data-level="3.2" data-path="advanced.html"><a href="advanced.html#citation"><i class="fa fa-check"></i><b>3.2</b> Citation</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="final.html"><a href="final.html"><i class="fa fa-check"></i><b>4</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -177,14 +171,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1><span class="header-section-number">2</span> Basic Bookdown</h1>
 <div id="r-code" class="section level2">
 <h2><span class="header-section-number">2.1</span> R code</h2>
-<p>This is a sample r code. Just like <em>.rmd</em> file, Some code ould be embeded in line<code>rnorm(10)</code> and results is -1.160251, 0.1539437, 1.4734804, 0.1667412, 0.6325754, -0.7980314, 0.0273887, 0.0716273, 0.1779327, -0.9555549.</p>
+<p>This is a sample r code. Just like <em>.rmd</em> file, Some code ould be embeded in line<code>rnorm(10)</code> and results is -0.1120213, 1.1729707, 0.316363, -0.7482966, 0.0160757, -0.6330718, 1.1467176, 1.1192202, -0.5867831, -1.4576851.</p>
 <p>Or you can put them in a code chunk:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="dv">1</span> <span class="op">+</span><span class="st"> </span><span class="dv">1</span></a></code></pre></div>
 <pre><code>## [1] 2</code></pre>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">rnorm</span>(<span class="dv">10</span>)  <span class="co"># 10 random numbers</span></a></code></pre></div>
-<pre><code>##  [1] -0.70730933  1.16073188 -1.73499313  0.94633531 -1.70076635
-##  [6] -0.33435175  1.45740339 -1.58812803 -1.78261064  0.09712482</code></pre>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">plot</span>(dist <span class="op">~</span><span class="st"> </span>speed, cars)  <span class="co"># a scatterplot</span></a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">rnorm</span>(<span class="dv">10</span>)  <span class="co"># 10 random numbers</span></a></code></pre></div>
+<pre><code>##  [1]  0.92942860  0.71972290 -0.77714495 -0.41485732 -0.01392456
+##  [6] -1.70180487  0.25551937 -0.19077687 -1.07434517 -0.59769230</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">plot</span>(dist <span class="op">~</span><span class="st"> </span>speed, cars)  <span class="co"># a scatterplot</span></a></code></pre></div>
 <div class="figure"><span id="fig:chunk-label"></span>
 <img src="_main_files/figure-html/chunk-label-1.png" alt="A figure caption." width="672" />
 <p class="caption">
@@ -192,11 +186,20 @@ Figure 2.1: A figure caption.
 </p>
 </div>
 </div>
+<div id="equations" class="section level2">
+<h2><span class="header-section-number">2.2</span> Equations</h2>
+<div class="sourceCode" id="cb7"><pre class="sourceCode latex"><code class="sourceCode latex"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="ss">$$</span><span class="er">\begin{equation*}</span><span class="ss"> </span></a>
+<a class="sourceLine" id="cb7-2" data-line-number="2"><span class="sc">\frac</span><span class="ss">{d}{dx}</span><span class="sc">\left</span><span class="ss">( </span><span class="sc">\int</span><span class="ss">_{a}^{x} f(u)</span><span class="sc">\,</span><span class="ss">du</span><span class="sc">\right</span><span class="ss">)=f(x)</span></a>
+<a class="sourceLine" id="cb7-3" data-line-number="3"><span class="er">\end{equation*}</span><span class="ss"> $$</span></a></code></pre></div>
+<p><span class="math display">\[\begin{equation*} 
+\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x)
+\end{equation*} \]</span></p>
+</div>
 <div id="figures" class="section level2">
-<h2><span class="header-section-number">2.2</span> Figures</h2>
+<h2><span class="header-section-number">2.3</span> Figures</h2>
 <p>Figures and tables with captions will be placed in <code>figure</code> and <code>table</code> environments, respectively.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="fl">.1</span>, <span class="fl">.1</span>))</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw">plot</span>(pressure, <span class="dt">type =</span> <span class="st">&#39;b&#39;</span>, <span class="dt">pch =</span> <span class="dv">19</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb8-1" data-line-number="1"><span class="kw">par</span>(<span class="dt">mar =</span> <span class="kw">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="fl">.1</span>, <span class="fl">.1</span>))</a>
+<a class="sourceLine" id="cb8-2" data-line-number="2"><span class="kw">plot</span>(pressure, <span class="dt">type =</span> <span class="st">&#39;b&#39;</span>, <span class="dt">pch =</span> <span class="dv">19</span>)</a></code></pre></div>
 <div class="figure" style="text-align: center"><span id="fig:nice-fig"></span>
 <img src="_main_files/figure-html/nice-fig-1.png" alt="Here is a nice figure!" width="80%" />
 <p class="caption">
@@ -205,11 +208,11 @@ Figure 2.2: Here is a nice figure!
 </div>
 </div>
 <div id="tables" class="section level2">
-<h2><span class="header-section-number">2.3</span> Tables</h2>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(</a>
-<a class="sourceLine" id="cb7-2" data-line-number="2">  <span class="kw">head</span>(iris, <span class="dv">20</span>), <span class="dt">caption =</span> <span class="st">&#39;Here is a nice table!&#39;</span>,</a>
-<a class="sourceLine" id="cb7-3" data-line-number="3">  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></a>
-<a class="sourceLine" id="cb7-4" data-line-number="4">)</a></code></pre></div>
+<h2><span class="header-section-number">2.4</span> Tables</h2>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1">knitr<span class="op">::</span><span class="kw">kable</span>(</a>
+<a class="sourceLine" id="cb9-2" data-line-number="2">  <span class="kw">head</span>(iris, <span class="dv">20</span>), <span class="dt">caption =</span> <span class="st">&#39;Here is a nice table!&#39;</span>,</a>
+<a class="sourceLine" id="cb9-3" data-line-number="3">  <span class="dt">booktabs =</span> <span class="ot">TRUE</span></a>
+<a class="sourceLine" id="cb9-4" data-line-number="4">)</a></code></pre></div>
 <table>
 <caption><span id="tab:nice-tab">Table 2.1: </span>Here is a nice table!</caption>
 <thead>
@@ -365,9 +368,10 @@ Figure 2.2: Here is a nice figure!
 </tbody>
 </table>
 </div>
-<div id="reference" class="section level2">
-<h2><span class="header-section-number">2.4</span> Reference</h2>
-<p>Reference a figure by its code chunk label with the <code>fig:</code> prefix, e.g., see Figure <a href="basic.html#fig:nice-fig">2.2</a>. Similarly, you can reference tables generated from <code>knitr::kable()</code>, e.g., see Table <a href="basic.html#tab:nice-tab">2.1</a>. You can also refer to chapters in your books @ref({#intro}) by <code>\@ref({#intro})</code>.</p>
+<div id="interactive-plot" class="section level2">
+<h2><span class="header-section-number">2.5</span> Interactive plot</h2>
+<div id="htmlwidget-900bdbe823c17efd0122" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-900bdbe823c17efd0122">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[40.80629,-73.963005,{"iconUrl":{"data":"https://www.columbia.edu/content/sites/default/files/styles/cu_crop/public/content/about/icon-crown.png?itok=VgCocz0Q","index":0},"iconWidth":28.9782608695652,"iconHeight":31,"iconAnchorX":14.4891304347826,"iconAnchorY":16},null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"<a href='https://www.columbia.edu/'> Columbia University <\/a>",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[40.80629,40.80629],"lng":[-73.963005,-73.963005]}},"evals":[],"jsHooks":[]}</script>
 
 </div>
 </div>
@@ -424,6 +428,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

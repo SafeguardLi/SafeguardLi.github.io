@@ -13,7 +13,7 @@
   
   
   <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="github-repo" content="SafeguardLi/SafeguardLi.github.io" />
+  
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="A Brief Intro to Bookdown" />
@@ -51,12 +51,6 @@
 
 
 <script src="libs/htmlwidgets-1.3/htmlwidgets.js"></script>
-<script src="libs/plotly-binding-4.9.0/plotly.js"></script>
-<script src="libs/typedarray-0.1/typedarray.min.js"></script>
-<link href="libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
-<link href="libs/plotly-htmlwidgets-css-1.46.1/plotly-htmlwidgets.css" rel="stylesheet" />
-<script src="libs/plotly-main-1.46.1/plotly-latest.min.js"></script>
 <link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
 <script src="libs/leaflet-1.3.1/leaflet.js"></script>
 <link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
@@ -145,14 +139,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="basic.html"><a href="basic.html"><i class="fa fa-check"></i><b>2</b> Basic Bookdown</a><ul>
 <li class="chapter" data-level="2.1" data-path="basic.html"><a href="basic.html#r-code"><i class="fa fa-check"></i><b>2.1</b> R code</a></li>
-<li class="chapter" data-level="2.2" data-path="basic.html"><a href="basic.html#figures"><i class="fa fa-check"></i><b>2.2</b> Figures</a></li>
-<li class="chapter" data-level="2.3" data-path="basic.html"><a href="basic.html#tables"><i class="fa fa-check"></i><b>2.3</b> Tables</a></li>
-<li class="chapter" data-level="2.4" data-path="basic.html"><a href="basic.html#reference"><i class="fa fa-check"></i><b>2.4</b> Reference</a></li>
+<li class="chapter" data-level="2.2" data-path="basic.html"><a href="basic.html#equations"><i class="fa fa-check"></i><b>2.2</b> Equations</a></li>
+<li class="chapter" data-level="2.3" data-path="basic.html"><a href="basic.html#figures"><i class="fa fa-check"></i><b>2.3</b> Figures</a></li>
+<li class="chapter" data-level="2.4" data-path="basic.html"><a href="basic.html#tables"><i class="fa fa-check"></i><b>2.4</b> Tables</a></li>
+<li class="chapter" data-level="2.5" data-path="basic.html"><a href="basic.html#interactive-plot"><i class="fa fa-check"></i><b>2.5</b> Interactive plot</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="advanced.html"><a href="advanced.html"><i class="fa fa-check"></i><b>3</b> Advanced Bookdown</a><ul>
-<li class="chapter" data-level="3.1" data-path="advanced.html"><a href="advanced.html#surface-plot-plotly"><i class="fa fa-check"></i><b>3.1</b> Surface Plot-plotly</a></li>
-<li class="chapter" data-level="3.2" data-path="advanced.html"><a href="advanced.html#map-with-date-leaflet"><i class="fa fa-check"></i><b>3.2</b> Map with Date-leaflet</a></li>
-<li class="chapter" data-level="3.3" data-path="advanced.html"><a href="advanced.html#citation"><i class="fa fa-check"></i><b>3.3</b> Citation</a></li>
+<li class="chapter" data-level="3.1" data-path="advanced.html"><a href="advanced.html#cross-reference"><i class="fa fa-check"></i><b>3.1</b> Cross-reference</a></li>
+<li class="chapter" data-level="3.2" data-path="advanced.html"><a href="advanced.html#citation"><i class="fa fa-check"></i><b>3.2</b> Citation</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="final.html"><a href="final.html"><i class="fa fa-check"></i><b>4</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -180,7 +174,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="preface" class="section level1 unnumbered">
 <h1>Preface</h1>
-<p>This is Preface</p>
+<p>This is a preface.</p>
 
 </div>
             </section>
@@ -236,6 +230,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
